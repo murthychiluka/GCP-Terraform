@@ -1,3 +1,8 @@
+```text
+Set the token from gcloud
+In Git Bash:
+export TF_VAR_google_access_token="$(gcloud auth print-access-token)"
+```
 
 ########## GCLOUD CLI ############
 
