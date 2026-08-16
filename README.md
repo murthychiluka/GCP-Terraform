@@ -1,7 +1,12 @@
 ```text
+Then every time you start a new Git Bash session, run:
 Set the token from gcloud
 In Git Bash:
 export TF_VAR_google_access_token="$(gcloud auth print-access-token)"
+
+One caveat
+
+For a real production setup, I would not use a manually supplied access token for Terraform. It's a temporary workaround for your Pluralsight lab. Ideally, Terraform should use ADC, a service account with appropriate IAM, or workload identity/OIDC.
 ```
 
 ########## GCLOUD CLI ############
